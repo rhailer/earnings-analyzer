@@ -72,7 +72,7 @@ st.set_page_config(
     page_title="Enterprise Software Intelligence",
     page_icon="◆",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
 # [Keep all your existing CSS - it looks great!]
@@ -685,87 +685,68 @@ div[data-baseweb="popover"] * {
 
 # [Keep all your existing SOFTWARE_MARKETS data and functions - they're fine]
 SOFTWARE_MARKETS = {
-    "Infrastructure Automation": [
-        {"name": "HashiCorp", "ticker": "HCP"},
+    "AI Productivity & Assistants": [
+        {"name": "Microsoft", "ticker": "MSFT"},
+        {"name": "Salesforce", "ticker": "CRM"},
+        {"name": "Adobe", "ticker": "ADBE"},
+        {"name": "ServiceNow", "ticker": "NOW"},
+        {"name": "IBM", "ticker": "IBM"}
+    ],
+    "AI/ML Ops": [
         {"name": "Datadog", "ticker": "DDOG"},
         {"name": "Snowflake", "ticker": "SNOW"},
-        {"name": "MongoDB", "ticker": "MDB"},
-        {"name": "Atlassian", "ticker": "TEAM"},
+        {"name": "Palantir", "ticker": "PLTR"},
+        {"name": "CrowdStrike", "ticker": "CRWD"},
         {"name": "IBM", "ticker": "IBM"}
     ],
-    "Customer Relationship Management (CRM)": [
-        {"name": "Salesforce", "ticker": "CRM"},
-        {"name": "HubSpot", "ticker": "HUBS"},
-        {"name": "Zoom", "ticker": "ZM"},
-        {"name": "ServiceNow", "ticker": "NOW"}
+    "Data Fabric": [
+        {"name": "Snowflake", "ticker": "SNOW"},
+        {"name": "MongoDB", "ticker": "MDB"},
+        {"name": "Palantir", "ticker": "PLTR"},
+        {"name": "Oracle", "ticker": "ORCL"},
+        {"name": "IBM", "ticker": "IBM"}
     ],
-    "Cybersecurity": [
+    "Application Development & Integration": [
+        {"name": "Microsoft", "ticker": "MSFT"},
+        {"name": "Atlassian", "ticker": "TEAM"},
+        {"name": "Salesforce", "ticker": "CRM"},
+        {"name": "Oracle", "ticker": "ORCL"},
+        {"name": "IBM", "ticker": "IBM"}
+    ],
+    "Infrastructure Automation": [
+        {"name": "Datadog", "ticker": "DDOG"},
+        {"name": "Microsoft", "ticker": "MSFT"},
+        {"name": "Oracle", "ticker": "ORCL"},
+        {"name": "ServiceNow", "ticker": "NOW"},
+        {"name": "IBM", "ticker": "IBM"}
+    ],
+    "Technology Business Management": [
+        {"name": "ServiceNow", "ticker": "NOW"},
+        {"name": "Salesforce", "ticker": "CRM"},
+        {"name": "Microsoft", "ticker": "MSFT"},
+        {"name": "Workday", "ticker": "WDAY"},
+        {"name": "IBM", "ticker": "IBM"}
+    ],
+    "Security Threat Management": [
         {"name": "CrowdStrike", "ticker": "CRWD"},
         {"name": "Palo Alto Networks", "ticker": "PANW"},
-        {"name": "Okta", "ticker": "OKTA"},
         {"name": "Zscaler", "ticker": "ZS"},
-        {"name": "SentinelOne", "ticker": "S"},
+        {"name": "Okta", "ticker": "OKTA"},
         {"name": "IBM", "ticker": "IBM"}
     ],
-    "Enterprise Resource Planning (ERP)": [
-        {"name": "SAP", "ticker": "SAP"},
-        {"name": "Oracle", "ticker": "ORCL"},
-        {"name": "Microsoft", "ticker": "MSFT"},
-        {"name": "Workday", "ticker": "WDAY"},
-        {"name": "IBM", "ticker": "IBM"}
-    ],
-    "Business Intelligence & Analytics": [
-        {"name": "Palantir", "ticker": "PLTR"},
-        {"name": "Alteryx", "ticker": "AYX"},
+    "Storage Software": [
         {"name": "Snowflake", "ticker": "SNOW"},
-        {"name": "Tableau (Salesforce)", "ticker": "CRM"},
-        {"name": "IBM", "ticker": "IBM"}
-    ],
-    "Collaboration Software": [
-        {"name": "Microsoft", "ticker": "MSFT"},
-        {"name": "Zoom", "ticker": "ZM"},
-        {"name": "Atlassian", "ticker": "TEAM"},
-        {"name": "Asana", "ticker": "ASAN"}
-    ],
-    "Content Management & Document Solutions": [
-        {"name": "Adobe", "ticker": "ADBE"},
-        {"name": "Dropbox", "ticker": "DBX"},
+        {"name": "MongoDB", "ticker": "MDB"},
+        {"name": "Oracle", "ticker": "ORCL"},
         {"name": "Box", "ticker": "BOX"},
-        {"name": "DocuSign", "ticker": "DOCU"}
-    ],
-    "E-commerce Platform Software": [
-        {"name": "Shopify", "ticker": "SHOP"},
-        {"name": "BigCommerce", "ticker": "BIGC"},
-        {"name": "Adobe Commerce", "ticker": "ADBE"}
-    ],
-    "Human Capital Management (HCM)": [
-        {"name": "Workday", "ticker": "WDAY"},
-        {"name": "ADP", "ticker": "ADP"},
-        {"name": "Paycom", "ticker": "PAYC"}
-    ],
-    "Marketing Automation": [
-        {"name": "HubSpot", "ticker": "HUBS"},
-        {"name": "Salesforce Marketing Cloud", "ticker": "CRM"},
-        {"name": "Adobe Marketing Cloud", "ticker": "ADBE"},
-        {"name": "Mailchimp (Intuit)", "ticker": "INTU"}
-    ],
-    "Financial Management Software": [
-        {"name": "Intuit", "ticker": "INTU"},
-        {"name": "Sage", "ticker": "SAGE"},
-        {"name": "Xero", "ticker": "XRO"}
-    ],
-    "Supply Chain Management": [
-        {"name": "Oracle SCM", "ticker": "ORCL"},
-        {"name": "SAP SCM", "ticker": "SAP"},
-        {"name": "Manhattan Associates", "ticker": "MANH"},
         {"name": "IBM", "ticker": "IBM"}
     ],
-    "Cloud Infrastructure & Platform Services": [
-        {"name": "Amazon Web Services", "ticker": "AMZN"},
-        {"name": "Microsoft Azure", "ticker": "MSFT"},
-        {"name": "Google Cloud", "ticker": "GOOGL"},
-        {"name": "IBM Cloud", "ticker": "IBM"},
-        {"name": "Oracle Cloud", "ticker": "ORCL"}
+    "Hybrid Application Management & OS Infrastructure": [
+        {"name": "Microsoft", "ticker": "MSFT"},
+        {"name": "Oracle", "ticker": "ORCL"},
+        {"name": "ServiceNow", "ticker": "NOW"},
+        {"name": "Datadog", "ticker": "DDOG"},
+        {"name": "IBM", "ticker": "IBM"}
     ]
 }
 
@@ -1591,42 +1572,3 @@ if search_term and search_market != "Select market...":
             search_term, 
             search_market
         )
-
-# Modern Sidebar
-with st.sidebar:
-    st.markdown("""
-    <div class="modern-card">
-        <h2>⚡ Control Center</h2>
-    </div>
-    """, unsafe_allow_html=True)
-    
-    st.markdown("### 🎯 Platform Features")
-    st.markdown("""
-    • **Real-time market intelligence**
-    • **Data quality validation**
-    • **Executive commentary tracking**
-    • **Modern professional UI**
-    • **Cross-market analysis**
-    • **AI-powered insights**
-    """)
-    
-    st.markdown("### 📊 Current Session")
-    if 'analysis_data' in st.session_state and st.session_state.analysis_data:
-        st.write(f"**Market:** {st.session_state.analysis_data.get('market', 'None')}")
-        companies_count = len(st.session_state.analysis_data.get('companies', []))
-        st.write(f"**Companies:** {companies_count}")
-    else:
-        st.write("**Status:** Ready for analysis")
-    
-    st.markdown("### 🔧 Data Quality")
-    st.write(f"**Markets:** {len(SOFTWARE_MARKETS)}")
-    st.write(f"**Companies:** {sum(len([c for c in companies if c['ticker'] != 'Private']) for companies in SOFTWARE_MARKETS.values())}")
-    st.write("**Validation:** Real-time")
-    
-    if st.button("🔄 Reset Session", type="secondary"):
-        st.session_state.search_results = {}
-        st.session_state.analysis_data = {}
-        st.rerun()
-    
-    st.markdown("---")
-    st.caption("*Enterprise-grade financial intelligence platform*")

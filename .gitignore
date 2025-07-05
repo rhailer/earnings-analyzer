@@ -1,0 +1,18 @@
+# Environment variables - NEVER commit these!
+.env
+.env.local
+.env.production
+*.env
+
+# Streamlit secrets - NEVER commit these!
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# Python cache
+__pycache__/
+*.pyc
+
+# API keys and secrets
+**/secrets.toml
+secrets/
+keys/
